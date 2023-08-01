@@ -6,79 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safety Boss Limited</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
+        <div>
+            <a href="index.html">
+                <img src="images/logo-removebg-preview.png" alt="Logo" class="logo">
+            </a>
+        </div>
         <h1 class="company-name">Safety Boss Limited</h1>
-        <div><img src="images/logo-removebg-preview.png" alt="Logo" class="logo"></div>
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products/Services</a></li>
+                <li><a href="product_list.html">Products/Services</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
                 <li><a href="customer_registration.html">Register</a></li>
             </ul>
         </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+
+
     </header>
 
     <main>
         <section id="about">
-            <h2>About us</h2>
-            <p>
-                Safety Boss Limited is a medium-sized company specializing in job safety products. We offer a
-                wide range
-                of Personal Protective Equipment (PPE), harnesses, jobsite lighting, and more to ensure the
-                safety of
-                workers.
-            </p>
-            <p>
-                With over a decade of experience, we have become one of the most dominant businesses in the
-                safety
-                products sector. Our mission is to provide high-quality safety solutions to businesses in
-                Trinidad &
-                Tobago and other Caribbean territories.
-            </p>
-        </section>
-
-        <section id="products">
-            <h2>Products/Services</h2>
-            <ul class="product-list">
-                <li class="product-item">
-                    <h3>Personal Protective Equipment (PPE)</h3>
-                    <p>High-quality PPE to ensure the safety of your workforce.
-                </li>
-                <li class="product-item">
-                    <h3>Harnesses and Safety Gear</h3>
-                    <p>Reliable harnesses and safety gear for various job tasks.</p>
-                </li>
-                <li class="product-item">
-                    <h3>Jobsite Lighting Solutions</h3>
-                    <p>Powerful lighting solutions to illuminate work areas effectively.</p>
-                </li>
-                <a href="product_list.html" class="button">View All Our Products/Services</a>
-            </ul>
-
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p>Don not hesitate to contact us if you need anything safety!</p>
+            <h2>Welcome to Safety Boss Ltd</h2>
+            <div class="about-content">
+                <p>
+                    At Safety Boss Limited, we believe in making your workplace safer and more secure. We are a
+                    dedicated team of safety
+                    professionals, providing a wide range of job safety products to protect your most valuable asset -
+                    your workers.
+                </p>
+                <p>
+                    With our top-quality Personal Protective Equipment (PPE), harnesses, jobsite lighting, and more, we
+                    strive to create a
+                    safe working environment for businesses across Trinidad & Tobago and the Caribbean territories.
+                </p>
+                <p>
+                    Our mission is to help your workforce stay protected and productive, ensuring peace of mind for both
+                    employers and
+                    employees. With over a decade of experience, Safety Boss Ltd has established itself as a trusted
+                    partner in safety
+                    solutions.
+                </p>
+                <p>
+                    Join us on this safety journey and let us make your workplace a safer place for everyone.
+                </p>
             </div>
+            <div class="about-image">
+                <img src="images/logo.png" alt="Welcome Image">
+            </div>
+        </section>
 
-            <h2>Register as a Customer</h2>
-            <div class="register">
-                <p>Come on board and get exclusive deals!</p>
-                <a href="customer_registration.html" class="button">Register as a Business Customer</a>
+        <section id="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/ppe.jpg">
+                    <h3>Product 1</h3>
+                    <p>Hard hats for personal protection on work sites.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/harness.jpg" class="products-product-image">
+                    <h3>Product 2</h3>
+                    <p>Harness to provide safety and stability to workers.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/light.jpg">
+                    <h3>Lighting</h3>
+                    <p>Very bright lights to make even the darkest worksites luminant.</p>
+                    <button class="button">Add to Cart</button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Safety Boss Limited | Contact us at: gloudoncamron9@gmail.com</p>
+        <div class="social-icons">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+
+        </div>
+        <p>&copy; 2023 Safety Boss Limited | Contact us at: info@safetyboss.com</p>
     </footer>
 </body>
 

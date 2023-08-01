@@ -1,199 +1,306 @@
+/* everywhere*/
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  header {
-    background-color: #43A6C6;
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem 0; 
-  }
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
 
-  .company-name h1 {
-    font-size: 0.5rem; 
-    margin-bottom: 0.5rem; 
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  footer {
-    background-color: #43A6C6;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-  }
-  
+a {
+  color: #007bff;
+  text-decoration: none;
+}
 
-  nav {
-    margin-top: 0.5rem; 
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease;
-  }
-  
-  nav a:hover {
-    background-color: #0056b3;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #43A6C6;
-    color: #fff;
-    padding: 1rem 2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
+a:hover {
+  text-decoration: underline;
+}
 
-  .logo {
-    flex: 1;
-    max-width: 85px;
-  }
-  
-  ul.product-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .product-item {
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 5px;
-  }
-  
-  .product-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .product-item p {
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  .contact-info {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .registration-form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  .registration-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-  
-  .registration-form input[type="text"],
-  .registration-form input[type="email"],
-  .registration-form input[type="password"]
-   {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 1rem;
-  }
-  
-  .registration-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .registration-form button:hover {
-    background-color: #0056b3;
-  }
+/* navbar*/
+header {
+  background-color: #43A6C6;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+  height: 60px; 
+  display: flex;
+  align-items: center;
+}
 
-  ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: #eee;
-  }
-  
-  ul.breadcrumb li {
-    display: inline;
-    font-size: 18px;
-  }
-  
-  ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "→";
-  }
-  
-  ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-  }
-  
-  ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
-  }
+.logo {
+  flex: 1;
+  max-height: 80px;
+}
+
+.company-name {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+nav {
+  flex: 1; 
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+}
+
+nav a.active {
+  background-color: #0056b3;
+  text-decoration: underline;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  margin-left: 10px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/*Prosucts  */
+ul.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-item p {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact info*/
+.contact-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* Reg Form */
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.registration-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}
+
+/* breadcrumbs */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "→";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* Footer*/
+footer {
+  background-color: #43A6C6;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+#featured-products {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.product-item button {
+  background-color: #43A6C6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-item button:hover {
+  background-color: #0056b3;
+}
+
+.product-item img {
+  float: left;
+  width:  300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+.fa-instagram {
+  background: #FD1D1D;
+  color: white;
+} 
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+} 
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
