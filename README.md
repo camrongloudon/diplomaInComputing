@@ -1,4 +1,7 @@
-Scenario [From First Assignment]
+Programming and Problem Solving Modules were also done and may be found here: https://github.com/camrongloudon/diplomaInComputingProgramming
+
+Scenario 
+
 Safety Boss Limited (SBL) is a medium-sized company specializing in job safety products e.g. PPE (Hard
 Hats, Safety Boots etc), harnesses, jobsite lighting etc. It was founded in 2012 and has grown steadily
 over the years, becoming one of the most dominant businesses in its sector. Currently SBL supplies
