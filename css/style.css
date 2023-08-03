@@ -32,6 +32,25 @@ header {
   max-height: 80px;
 }
 
+#about {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+}
+
+.about-content {
+  flex: 1; 
+  padding-right: 2rem; 
+}
+
+.about-image {
+  flex: 1;
+}
+.welcome {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .company-name {
   font-size: 2rem;
   margin-left: 10px;
