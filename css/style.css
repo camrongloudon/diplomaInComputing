@@ -1,4 +1,3 @@
-/* everywhere*/
 body {
   font-family: Arial, sans-serif;
   line-height: 2;
@@ -16,13 +15,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* navbar*/
 header {
   background-color: #43A6C6;
   color: #fff;
   text-align: center;
   padding: 1rem 1rem;
-  height: 60px; 
+  height: 60px;
   display: flex;
   align-items: center;
 }
@@ -32,32 +30,13 @@ header {
   max-height: 80px;
 }
 
-#about {
-  display: flex;
-  flex-direction: row; 
-  align-items: center; 
-}
-
-.about-content {
-  flex: 1; 
-  padding-right: 2rem; 
-}
-
-.about-image {
-  flex: 1;
-}
-.welcome {
-  text-align: center;
-  margin-top: 1rem;
-}
-
 .company-name {
   font-size: 2rem;
   margin-left: 10px;
 }
 
 nav {
-  flex: 1; 
+  flex: 1;
   margin-left: 20px;
 }
 
@@ -66,7 +45,7 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 nav li {
@@ -121,12 +100,7 @@ section {
   margin-bottom: 2rem;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
+h1,
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -138,7 +112,6 @@ p {
   line-height: 1.8;
 }
 
-/*Prosucts  */
 ul.product-list {
   list-style: none;
   padding: 0;
@@ -160,50 +133,10 @@ ul.product-list {
   margin-bottom: 0.5rem;
 }
 
-/* Contact info*/
-.contact-info {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.product-item strong {
+  color: #ff520d;
 }
 
-/* Reg Form */
-.registration-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.registration-form label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.registration-form input[type="text"],
-.registration-form input[type="email"],
-.registration-form input[type="password"] {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 1rem;
-}
-
-.registration-form button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.registration-form button:hover {
-  background-color: #0056b3;
-}
-
-/* breadcrumbs */
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -231,7 +164,7 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
-/* Footer*/
+
 footer {
   background-color: #43A6C6;
   color: #fff;
@@ -239,6 +172,121 @@ footer {
   text-align: center;
 }
 
+.social-icons .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+.social-icons .fa:hover {
+  opacity: 0.5;
+}
+
+.social-icons .fa-instagram {
+  background: #FD1D1D;
+  color: white;
+}
+
+.social-icons .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.social-icons .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-heading {
+ text-align: center;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.registration-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}
+
+#product-details .product-details {
+  display: flex;
+  align-items: center;
+}
+
+#product-details .product-description {
+  padding-left: 2rem;
+}
+
+#product-details .price {
+  font-size: 1.5rem;
+}
+
+#product-details .button {
+  background-color: #43A6C6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+#product-details .button:hover {
+  background-color: #0056b3;
+}
+
+#product-details img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#product-details h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+#product-details p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
 
 #featured-products {
   text-align: center;
@@ -275,10 +323,86 @@ footer {
   margin-bottom: 1rem;
 }
 
-.product-item button {
+
+.contact-info {
+  font-size: 1.2rem;
+  margin-bottom: 1
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-form img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.review {
+  margin-bottom: 1rem;
+}
+
+.review h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.review p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.review .rating {
+  font-size: 1.5rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product-item img {
+  float: left;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-item p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
   background-color: #43A6C6;
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -286,18 +410,26 @@ footer {
   transition: background-color 0.2s ease;
 }
 
-.product-item button:hover {
+button:hover {
   background-color: #0056b3;
 }
 
-.product-item img {
-  float: left;
-  width:  300px;
-  height: 300px;
-  object-fit: cover;
+select {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
 }
 
- .fa {
+select option {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.fa {
   padding: 20px;
   font-size: 30px;
   width: 40px;
@@ -309,17 +441,30 @@ footer {
 .fa:hover {
   opacity: 0.5;
 }
+
 .fa-instagram {
   background: #FD1D1D;
   color: white;
-} 
+}
 
 .fa-twitter {
   background: #55ACEE;
   color: white;
-} 
+}
 
 .fa-facebook {
   background: #3B5998;
   color: white;
+}
+
+.use-cases {
+  margin-bottom: 2rem;
+}
+
+.use-cases li {
+  position: relative;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  list-style: georgian outside url('/non-existent.svg');
 }
