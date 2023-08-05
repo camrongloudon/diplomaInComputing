@@ -117,6 +117,18 @@ ul.product-list {
   padding: 0;
 }
 
+/* remember to add the markup for the text to wrap the image */
+.about-image {
+  width: 350px; 
+  height: auto; 
+  position: absolute; 
+}
+
+.about-content {
+  margin-left: 650px;   
+  padding-bottom: 300px;
+}
+
 .product-item {
   margin-bottom: 1rem;
   border: 1px solid #ccc;
