@@ -41,13 +41,16 @@
         <section>
             <h2 class="form-heading">Business Customer Register</h2>
             <h3 class="form-heading">To register please fill the form and we will get back to you as soon as possible.
+                <br>
+                <strong>* indicates required</strong>
             </h3>
-            <strong>* indicates required</strong>
+
             <form class="registration-form">
                 <label for="Rep First Name">*Representative First Name:</label>
-                <input type="text" id="company_name" name="company_name" required>
+                <input type="text" id="repFName" name="RepFName" required>
 
-
+                <label for="Rep Last Name">*Representative Last Name:</label>
+                <input type="text" id="repLName" name="RepLName" required>
 
                 <label for="Gender">*Gender:</label>
                 <div>
@@ -320,7 +323,7 @@
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
 
-                <label for="Interested Products">*Interested Products:</label>
+                <label class="interested-products" for="Interested Products">*Interested Products:</label>
                 <div>
                     <label for="Hard Hats">
                         <input type="checkbox" id="contactChoice1" name="contact" value="email" />

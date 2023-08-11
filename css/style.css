@@ -227,7 +227,9 @@ footer {
   font-size: 1.2rem;
 }
 
-
+.interested-products {
+  padding-top: 30px; 
+}
 
 .registration-form input[type="text"],
 .registration-form input[type="email"],
@@ -382,6 +384,24 @@ footer {
 
 .review .rating {
   font-size: 1.5rem;
+}
+
+.review img {
+  width: 35px;
+  height: auto;
+}
+
+/*Review Grid */
+.review {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.profile {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
 }
 
 .product-grid {
